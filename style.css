@@ -1,0 +1,27 @@
+:root{
+  --bg:#0b0f1a; --panel:#0f1526; --ink:#e6e7eb; --muted:#9aa4b2; --brand:#9b87f5; --accent:#1DB954; --surface:#12182a; --maxw:980px;
+}
+*{box-sizing:border-box} html,body{margin:0;padding:0}
+body{font-family:'Inter',sans-serif; color:var(--ink); background:var(--bg); line-height:1.6;}
+.container{max-width:var(--maxw); margin:0 auto; padding:0 20px;}
+
+/* Nav with better spacing */
+nav{position:sticky; top:0; z-index:10; background:rgba(11,15,26,.6); border-bottom:1px solid rgba(255,255,255,.06); backdrop-filter: blur(8px);}
+nav .container{display:flex; gap:28px; justify-content:center; flex-wrap:wrap; padding:14px 10px;}
+nav a{color:var(--ink); text-decoration:none; font-weight:600; padding:8px 6px; display:inline-block; font-size:18px;}
+nav a:focus{outline:2px solid var(--brand); outline-offset:3px;}
+
+/* Hero with parallax */
+.hero{position:relative; min-height:80vh;}
+.hero-bg{position:fixed; inset:0; width:100%; height:100vh; background:url('assets/hero.jpg') center/cover no-repeat; z-index:-1;}
+.overlay{background:linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.55)); min-height:80vh; display:flex; align-items:stretch;}
+.hero-inner{display:flex; flex-direction:column; align-items:center; text-align:center; padding:140px 0; color:#fff;}
+h1{font-family:'UnifrakturCook', serif; font-size:clamp(56px,9vw,104px); margin:0 0 16px;}
+
+/* Sections */
+section{padding:72px 0;}
+.muted{color:var(--muted);}
+
+/* Footer */
+footer{background:#060913; color:#aab2bf;}
+footer .container{padding:22px; text-align:center;}
