@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jane Doe — Bonnie | Official Site</title>
+  <meta name="description" content="Jane Doe — Bonnie. Official website: watch the video, listen on Spotify, and get in touch. Hamburg-based artist with a dark, cinematic sound.">
+  <link rel="icon" href="data:,">
+
+  <!-- Social sharing (update URL/username if needed) -->
+  <meta property="og:title" content="Jane Doe — Bonnie | Official Site">
+  <meta property="og:description" content="Watch the Bonnie video, stream on Spotify, and contact Jane Doe.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOURUSERNAME.github.io/">
+  <meta property="og:image" content="https://YOURUSERNAME.github.io/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts: IBM Plex Sans for body, UnifrakturCook for hero title -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+  <nav aria-label="Primary">
+    <div class="container">
+      <a href="#home">Home</a>
+      <a href="#bio">Bio</a>
+      <a href="#video">Video</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="overlay">
+      <div class="container hero-inner fade-in">
+        <h1>Jane&nbsp;Doe</h1>
+        <a class="btn" href="#video">Watch the Video</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="bio">
+      <div class="container">
+        <h2>About</h2>
+        <p class="muted">
+          Jane Doe is a Hamburg-based artist blending intimate melodies with nocturnal atmospheres.
+          Her single <em>Bonnie</em> explores late-night city lights, quiet courage, and the small moments that grow into anthems.
+        </p>
+      </div>
+    </section>
+
+    <section id="video">
+      <div class="container">
+        <h2>Bonnie — Official Video</h2>
+
+        <!-- Lazy-load YouTube embed with custom cover -->
+        <div class="video-wrap video-lazy" data-id="Y1xExg2JZ-M">
+          <img
+            src="assets/video-cover.jpg"
+            alt="Jane Doe — Bonnie video cover"
+            class="video-thumb">
+          <button class="video-play" aria-label="Play video">▶</button>
+        </div>
+
+        <div class="stream-row">
+          <a class="btn spotify"
+             href="https://open.spotify.com/artist/4CVCONxftp4x321qrEepYu?si=TSZQfJRTTBqujpHOUBJvcg"
+             target="_blank" rel="noopener">Spotify</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="muted">Bookings & inquiries</p>
+
+        <p><a class="btn outline" href="mailto:Jana.de-vries@web.de">Email Jana.de-vries@web.de</a></p>
+
+        <form action="https://formspree.io/f/PUT-YOUR-FORMSPREE-ID" method="POST" class="contact-form" id="fs-form">
+          <div class="form-grid">
+            <label>Name
+              <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>Email
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+          </div>
+          <label>Message
+            <textarea name="message" placeholder="Tell us about your event" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send</button>
+          <p id="fs-status" class="muted" style="display:none;margin-top:8px;"></p>
+        </form>
+
+        <p style="margin-top:10px">
+          <button class="btn outline" id="copy-email" type="button">Copy email address</button>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <p>&copy; 2025 Jane Doe</p>
+      <div class="socials">
+        <a href="https://instagram.com/" target="_blank" aria-label="Instagram" rel="noopener">Instagram</a>
+        <a href="https://youtube.com/" target="_blank" aria-label="YouTube" rel="noopener">YouTube</a>
+        <a href="https://open.spotify.com/artist/4CVCONxftp4x321qrEepYu?si=TSZQfJRTTBqujpHOUBJvcg"
+           target="_blank" aria-label="Spotify" rel="noopener">Spotify</a>
+      </div>
+      <p class="credits">Site by <strong>YoSoyElSpickoWebDesign</strong></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
