@@ -15,7 +15,17 @@ nav{position:sticky; top:0; z-index:10; background:#fff; border-bottom:1px solid
 nav .container{display:flex; gap:18px; justify-content:center; padding:12px;}
 nav a{color:var(--ink); text-decoration:none; font-weight:600;}
 nav a:focus{outline:2px solid var(--brand); outline-offset:3px;}
-.hero{background:url('assets/hero.jpg') center/cover no-repeat; color:#fff; min-height:70vh; display:flex; align-items:stretch;}
+.hero {
+  background: url('assets/hero.jpg') center/cover no-repeat;
+  min-height: 70vh;
+}
+
+/* On small screens, use the lighter image */
+@media (max-width: 600px) {
+  .hero {
+    background: url('assets/hero-mobile.jpg') center/cover no-repeat;
+  }
+}
 .hero .overlay{background:rgba(0,0,0,.45); width:100%;}
 .hero-inner{display:flex; flex-direction:column; align-items:center; text-align:center; padding:120px 0;}
 h1{line-height:1.1; font-weight:800; font-size:clamp(38px,7vw,72px); margin:0 0 10px;}
