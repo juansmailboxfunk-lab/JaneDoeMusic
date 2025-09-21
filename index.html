@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jane Doe — Official</title>
+  <meta name="description" content="Official site for Jane Doe. Watch, listen, and get in touch.">
+  <link rel="icon" href="data:,">
+
+  <!-- Social sharing (update URL/username if needed) -->
+  <meta property="og:title" content="Jane Doe — Official">
+  <meta property="og:description" content="Watch, listen, and get in touch.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOURUSERNAME.github.io/">
+  <meta property="og:image" content="https://YOURUSERNAME.github.io/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts: Gothic display for headings + clean sans for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <a href="#main" class="skip">Skip to content</a>
+
+  <nav aria-label="Primary">
+    <div class="container">
+      <a href="#home">Home</a>
+      <a href="#bio">Bio</a>
+      <a href="#video">Video</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="overlay">
+      <div class="container hero-inner">
+        <h1>Jane&nbsp;Doe</h1>
+        <a class="btn" href="#video">Watch the Video</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="bio">
+      <div class="container">
+        <h2>About</h2>
+        <p class="muted">
+          Jane Doe is a Hamburg‑based artist blending intimate melodies with nocturnal atmospheres.
+          Her latest EP explores late‑night city lights, quiet courage, and the small moments that grow into anthems.
+        </p>
+      </div>
+    </section>
+
+    <section id="video">
+      <div class="container">
+        <h2>Featured Video</h2>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/Y1xExg2JZ-M"
+            title="Jane Doe — Official Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- Streaming buttons row -->
+        <div class="stream-row">
+          <a class="btn spotify" href="https://open.spotify.com/artist/ARTIST_ID" target="_blank" rel="noopener">Spotify</a>
+          <a class="btn apple" href="https://music.apple.com/" target="_blank" rel="noopener">Apple Music</a>
+          <a class="btn outline" href="#bio">About</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="muted">Bookings & inquiries</p>
+
+        <p><a class="btn outline" href="mailto:Jana.de-vries@web.de">Email Jana.de‑vries@web.de</a></p>
+
+        <form action="https://formspree.io/f/PUT-YOUR-FORMSPREE-ID" method="POST" class="contact-form" id="fs-form">
+          <div class="form-grid">
+            <label>Name
+              <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>Email
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+          </div>
+          <label>Message
+            <textarea name="message" placeholder="Tell us about your event" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send</button>
+          <p id="fs-status" class="muted" style="display:none;margin-top:8px;"></p>
+        </form>
+
+        <p style="margin-top:10px">
+          <button class="btn outline" id="copy-email" type="button">Copy email address</button>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <p>&copy; 2025 Jane Doe</p>
+      <div class="socials">
+        <!-- Simple inline icons -->
+        <a href="https://instagram.com/" target="_blank" aria-label="Instagram" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5a5 5 0 100 10 5 5 0 000-10zm6.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM12 9a3 3 0 110 6 3 3 0 010-6z"/></svg>
+        </a>
+        <a href="https://youtube.com/" target="_blank" aria-label="YouTube" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 00-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 00.5 6.2C0 8 0 12 0 12s0 4 .5 5.8a3 3 0 002.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 002.1-2.1C24 16 24 12 24 12s0-4-.5-5.8zM9.6 15.5v-7l6.4 3.5-6.4 3.5z"/></svg>
+        </a>
+        <a href="https://open.spotify.com/artist/ARTIST_ID" target="_blank" aria-label="Spotify" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12S6.2 22.5 12 22.5 22.5 17.8 22.5 12 17.8 1.5 12 1.5zm5.1 15.1a.9.9 0 01-1.2.3c-3.3-2-7.5-2.4-12.4-1.1a.9.9 0 11-.5-1.7c5.4-1.4 10-1 13.8 1.3.4.2.6.8.3 1.2zm1.6-3.4a1 1 0 01-1.3.3c-3.8-2.3-9.7-3-14.2-1.4a1 1 0 01-.6-1.9c5.1-1.7 11.6-1 15.8 1.6.5.3.6 1 .3 1.4zm.2-3.6c-4.3-2.5-11.4-2.8-15.5-1.4a1.1 1.1 0 11-.7-2.1c4.6-1.5 12.4-1.1 17.3 1.7.6.4.7 1.2.4 1.8-.3.5-1 .7-1.5.4z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
